@@ -1,0 +1,185 @@
+/* Variables start */
+:root {
+	--green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--grey: hsl(0, 0%, 20%);
+	--darkGrey: hsl(0, 0%, 12%);
+	--offBlack: hsl(0, 0%, 8%);
+	--spacing: 2.4rem;
+	--desktop-padding: 4rem;
+}
+/* Variables end */
+
+/* CSS reset start*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Inter", sans-serif;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	border: none;
+}
+/* CSS reset end */
+
+/* Tag styling start */
+body {
+	background-color: var(--offBlack);
+	font-size: 1.4rem;
+	color: var(--white);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 1.4rem;
+}
+
+h2 {
+	color: var(--green);
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+button {
+	position: relative;
+	background-color: var(--grey);
+	color: var(--white);
+	font-weight: 600;
+	padding: 1.5rem;
+	min-width: 27.9rem;
+	height: 4.5rem;
+	text-align: center;
+	border-radius: 1rem;
+	transition: background-color 0.2s, padding-right 0.2s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--green);
+	color: var(--grey);
+}
+
+button:hover .icon {
+	visibility: visible;
+	scale: 1;
+	left: 55%;
+}
+
+a:link,
+a:visited {
+	color: var(--green);
+	text-decoration: none;
+}
+/* Tag styling end */
+
+/* Class styling start */
+.name-location {
+	margin-bottom: var(--spacing);
+}
+.profile-pic {
+	width: 8.8rem;
+	height: 8.8rem;
+	border-radius: 50%;
+	margin-bottom: var(--spacing);
+}
+
+.card {
+	background-color: var(--darkGrey);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 57.9rem;
+	padding: var(--spacing);
+	border-radius: 1rem;
+}
+
+.bio {
+	font-weight: 400;
+	margin-bottom: var(--spacing);
+}
+
+.links ul {
+	height: 28.9rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.icon {
+	position: absolute;
+	height: 3rem;
+	top: 15%;
+	left: 40%;
+	visibility: hidden;
+	scale: 0;
+	transition: scale 0.2s, left 0.2s;
+}
+
+.button-1:hover {
+	padding-right: 5rem;
+}
+
+.button-2:hover,
+.button-3:hover {
+	padding-right: 5.5rem;
+}
+
+.button-4:hover {
+	padding-right: 3rem;
+}
+
+.button-5:hover {
+	padding-right: 6.5rem;
+}
+
+.attribution {
+	min-width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	position: absolute;
+	bottom: 0;
+}
+/* Class styling end */
+
+/* Media queries start */
+@media (min-width: 25rem) {
+	button {
+		min-width: 30.4rem;
+	}
+	.card {
+		min-height: 61.1rem;
+		padding: var(--desktop-padding);
+	}
+}
+
+@media (max-height: 37.5rem) {
+	.attribution {
+		visibility: hidden;
+	}
+}
