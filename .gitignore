@@ -4,7 +4,6 @@
 #####################################################
 *.sketch
 *.fig
-folder_to_ignore/images
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
