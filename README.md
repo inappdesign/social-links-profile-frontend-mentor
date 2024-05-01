@@ -48,8 +48,6 @@ I will continue my learning on Frontend Mentor.
 
 - Frontend Mentor - [@inappdesign](https://www.frontendmentor.io/profile/inappdesign)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
 ## Acknowledgments
 
 Thanks to font awesome for the icons.
